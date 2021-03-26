@@ -9,13 +9,15 @@ class ContaCorrente {
     sacar(valor) {
         if (this._saldo >= valor) {
             this._saldo -= valor;
+            return valor;
         }
     }
 
     depositar(valor) {
-        if (valor > 0) {
-            this._saldo += valor;
+        if (valor <= 0) {
+            return;
         }
+        this._saldo += valor;
     }
 }
 
@@ -30,3 +32,6 @@ cliente2.nome = "Bruce Wayne";
 cliente2.cpf = 12187931575;
 
 const contaCorrente1 = new ContaCorrente();
+
+contaCorrente1._saldo = 0;
+contaCorrente1.agencia = 16158;
