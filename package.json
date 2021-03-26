@@ -1,0 +1,21 @@
+{
+    "name": "bytebank",
+    "version": "1.0.0",
+    "description": "Projeto do bytebank para controle de saques e depositos",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/beduardodev/sistemaBancario.git"
+    },
+    "author": "BEduardo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/beduardodev/sistemaBancario/issues"
+    },
+    "homepage": "https://github.com/beduardodev/sistemaBancario#readme",
+    "type": "module"
+
+}
