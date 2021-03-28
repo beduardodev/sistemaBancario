@@ -8,4 +8,8 @@ export class Cliente {
         return this._cpf
     }
 
+    get nome() {
+        return this.nome;
+    }
+
 }
