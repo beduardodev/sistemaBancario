@@ -2,7 +2,7 @@ import { Cliente } from "./Cliente.js";
 export class ContaCorrente {
     agencia;
     _cliente;
-    _saldo;
+    _saldo = 0;
 
     set cliente(novoValor) {
         if (novoValor instanceof Cliente) {
@@ -18,6 +18,12 @@ export class ContaCorrente {
     get saldo() {
         return this._saldo;
     }
+
+    constructor(cliente, agencia) {
+        this.agencia = agencia;
+        this._cliente = cliente;
+    }
+
 
     sacar(valor) {
         if (this._saldo >= valor) {

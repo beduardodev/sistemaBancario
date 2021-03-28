@@ -1,29 +1,17 @@
 import { Cliente } from "./models/Cliente.js";
 import { ContaCorrente } from "./models/ContaCorrente.js";
 
-const cliente1 = new Cliente();
+const cliente1 = new Cliente("Bruno Eduardo", 12172931575);
 
-cliente1.nome = "Bruno Eduardo";
-cliente1.cpf = 12172931575;
+const cliente2 = new Cliente("Bruce Wayne", 12187931575);
 
-const cliente2 = new Cliente();
+const contaCorrente1 = new ContaCorrente(cliente1, 741258963);
+const contaCorrente2 = new ContaCorrente(cliente2, 96325741);
 
-cliente2.nome = "Bruce Wayne";
-cliente2.cpf = 12187931575;
-
-const contaCorrente1 = new ContaCorrente();
-const contaCorrente2 = new ContaCorrente();
-
-contaCorrente1._saldo = 0;
-contaCorrente1.agencia = 16158;
-contaCorrente1.cliente = cliente1;
 contaCorrente1.depositar(500);
-
-contaCorrente2._saldo = 0;
-contaCorrente2.agencia = 156168;
-contaCorrente2.cliente = cliente2;
-
-contaCorrente1.transferir(200, contaCorrente2);
-
 console.log(contaCorrente1);
-console.log(contaCorrente2);
+
+// contaCorrente1.transferir(200, contaCorrente2);
+
+
+// console.log(contaCorrente2);
