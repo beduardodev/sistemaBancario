@@ -24,12 +24,10 @@ export class Conta {
         return this.agencia;
     }
 
-    sacar(valor, taxa) {
-        const valorSacado = taxa * valor;
-
-        if (this._saldo >= valorSacado) {
-            this._saldo -= valorSacado;
-            return valorSacado;
+    sacar(valor) {
+        if (this._saldo >= valor) {
+            this._saldo -= valor;
+            return valor;
         }
     }
 
