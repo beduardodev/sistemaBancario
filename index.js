@@ -11,7 +11,7 @@ const contaCorrente2 = new ContaCorrente(cliente2, 96325741);
 contaCorrente1.depositar(500);
 console.log(contaCorrente1);
 
-// contaCorrente1.transferir(200, contaCorrente2);
+contaCorrente1.transferir(200, contaCorrente2);
+console.log(contaCorrente2);
 
-
-// console.log(contaCorrente2);
+console.log(ContaCorrente.numeroDeContas);
