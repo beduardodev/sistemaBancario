@@ -13,9 +13,10 @@ gerente.cadastrarSenha("123");
 const cliente = new Cliente("Ra's al Ghul", 666, 999);
 
 const gerenteEstaLogado = SistemaAutenticacao.login(gerente, "123");
-const diretorEstaLogado = SistemaAutenticacao.login(diretor, "741258963");
-const clienteEstaLogado = SistemaAutenticacao.login(cliente, "999");
-
 console.log("gerenteEstaLogado", gerenteEstaLogado);
+
+const diretorEstaLogado = SistemaAutenticacao.login(diretor, "741258963");
 console.log("diretorEstaLogado", diretorEstaLogado);
+
+const clienteEstaLogado = SistemaAutenticacao.login(cliente, "999");
 console.log("clienteEstaLogado", clienteEstaLogado);

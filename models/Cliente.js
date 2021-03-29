@@ -8,8 +8,4 @@ export class Cliente {
     get cpf() {
         return this._cpf
     }
-
-    autenticar(senha) {
-        return senha == this._senha;
-    }
 }
