@@ -1,20 +1,9 @@
 import { Cliente } from "./models/Cliente.js";
-import { ContaCorrente } from "./models/Conta/ContaCorrente.js";
-import { ContaPoupanca } from "./models/Conta/ContaPoupanca.js";
-import { ContaSalario } from "./models/Conta/ContaSalario.js";
-
-const cliente1 = new Cliente("Bruno Eduardo", 12172931575);
-const contaCorrente1 = new ContaCorrente(cliente1, 741258963);
-
-contaCorrente1.depositar(500);
-
-const contaPoupanca = new ContaPoupanca(50, cliente1, 741258963, 1001);
-
-const contaSalario = new ContaSalario(cliente1);
-contaSalario.depositar(100);
-contaSalario.sacar(10);
+import { Diretor } from "./models/Funcionarios/Diretor.js";
+import { Gerente } from "./models/Funcionarios/Gerente.js";
 
 
+const diretor = new Diretor("Bruce Wayne", 10000, 568713554125);
+const gerente = new Gerente("Dick Grayson", 5000, 1651654164168);
 
-console.log(contaSalario);
-console.log(contaCorrente1);
+SistemaAutenticacao.login(diretor, "741258963");
